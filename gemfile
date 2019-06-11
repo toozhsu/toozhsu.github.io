@@ -5,4 +5,4 @@ gem "rspec"
 gem 'jekyll', '~> 3.3'
 
 gem "github-pages", group: :jekyll_plugins
-gem "jekyll-theme-minimal", "~>0.4"
+gem 'jekyll-theme-minimal', '~> 0.1.1'

@@ -35,8 +35,21 @@
 <a class="twitter-timeline" data-width="420" data-height="500" data-link-color="#2B7BB9" href="https://twitter.com/Tooztooz?ref_src=twsrc%5Etfw">🐤 by Tooztooz</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			<div class="container">
 					      <p></p>
+					      
+<small>{{ page.date | date: "%-d %B %Y" }}</small>
+<h1>{{ page.title }}</h1>
+
+<p class="view">by {{ page.author | default: site.author }}</p>
+
+{{content}}
+
+{% if page.tags %}
+  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+{% endif %}
+
 					      <p></p>
 					      <br /><br />
+	
 			{{ content }}
 			
 			</div><!-- /.container -->

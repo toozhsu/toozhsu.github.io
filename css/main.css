@@ -1,8 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background: url('morocco.png');
-    background-size: 100% 50%;
+    background: url('morocco.png') 0 50;
 
 
 }

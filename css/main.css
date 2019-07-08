@@ -1,7 +1,10 @@
 body {
     margin: 60px auto;
     width: 70%;
-    background: url('morocco.png') repeat 0 0;
+    background: url('morocco.png');
+    background-size: 100% 50%;
+
+
 }
 }
 nav ul, footer ul {

@@ -1,9 +1,17 @@
 body {
     margin: 60px auto;
     width: 70%;
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+
 
 }
-
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 nav ul, footer ul {
     font-family:'Helvetica', 'Calibri', 'Sans-Serif';
     padding: 0px;
@@ -77,38 +85,3 @@ ul.posts li {
   30% { border-color: orange; }
 }
 
-:root {
-    --primary-color: #302AE6;
-    --secondary-color: #536390;
-    --font-color: #424242;
-    --bg-color: #fff;
-    --heading-color: #292922;
-}
-[data-theme="dark"] {
-    --primary-color: #9A97F3;
-    --secondary-color: #818cab;
-    --font-color: #e1e1ff;
-    --bg-color: #161625;
-    --heading-color: #818cab;
-}
-body {
-    background-color: var(--bg-color);
-    color: var(--font-color);
-
-    /*other styles*/
-    .....
-}
-
-h1 {
-    color: var(--secondary-color);
-
-    /*other styles*/
-    .....
-}
-
-a {
-    color: var(--primary-color);
-
-    /*other styles*/
-    .....
-}

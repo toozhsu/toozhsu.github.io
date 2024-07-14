@@ -16,6 +16,21 @@ p.inset {border-style: inset;}
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Calibri', 'Sans-Serif';
+    font-family: 'Canela Text Trial', sans-serif;
+    font-family: 'Canela Trial', sans-serif;
+    font-family: 'Canela Condensed Trial', sans-serif;
+    font-family: 'Canela Deck Trial', sans-serif;
+    
+@font-face {
+    font-family: "canela";
+    src: url("https://db.onlinewebfonts.com/t/9da955c8511328b8b914cf9163add256.eot");
+    src: url("https://db.onlinewebfonts.com/t/9da955c8511328b8b914cf9163add256.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/9da955c8511328b8b914cf9163add256.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/9da955c8511328b8b914cf9163add256.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/9da955c8511328b8b914cf9163add256.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/9da955c8511328b8b914cf9163add256.svg#canela")format("svg");
+}    
+                                            
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -33,7 +48,12 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Calibri', 'Sans-Serif';
+	font-family:'Helvetica', 'Calibri', 'Sans-Serif';
+	font-family: 'Canela Text Trial', sans-serif;
+	font-family: 'Canela Trial', sans-serif;
+	font-family: 'Canela Condensed Trial', sans-serif;
+	font-family: 'Canela Deck Trial', sans-serif;
+
 }
 p {
     font-size: 1.5em;

@@ -3,8 +3,13 @@
 	<html>		
 		<head>
 			
-		<meta charset=utf-8" />
+		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 		<title>Yu-chuan 'Tooz' Hsu</title>
+  		<link rel="preconnect" href="https://fonts.googleapis.com" />
+ 		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+			
 		<meta property="og:image" content="https://toozhsu.github.io/img/toozhicon1.jpg" />
 		<meta property="og:title" content="tooz hsu" />
 		<meta property="og:description" content="Hailing from Taiwan, Yu-chuan 'Tooz' Hsu is a technical program/ project manager and a freelance translator/ interpreter" />
@@ -17,9 +22,6 @@
 </style>
 
 
-
-
-		<title>Tooz Hsu</title>
 		<link href="data:image/x-icon;base64,AAABAAEAICAAAAEAGACoDAAAFgAAACgAAAAgAAAAQAAAAAEAGAAAAAAAqAwAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/m2P/m2P/m2P/m2P/m2P/m2P/m2P/m2P/m2P/
 m2P/m2P/m2P/m2P/m2P/m2P/m2P/m2MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/
@@ -100,61 +102,670 @@ function myFunction() {
    element.classList.toggle("dark-mode");
 }
 </script>
-								   
-			<nav>
-	    		<ul>				
-				<br>
-				<p style="text-align:center;">
-				<img src="img/0.png" alt="tooz hsu" style="width:150px;height:150px;">
-				</p><br/>
-					       
-				 <br>
-				<li></li>　<img src = "img/an.EGG.gif"></br>
-
-						 
-	    		</ul>
-			</nav>
-			<p> </p>
-			
-			<div class="trigger">
-			<h2> ☺︎ </a></h2>
-					     </div>
-					    
-<font face = "canela" size = "4" style = "text-align:left;">Hailing from Taiwan, Yu-chuan 'Tooz' Hsu is a technical program/ project manager and a freelance translator/ interpreter based in 🌍💻. When she's not working, she enjoys traveling, photography, reading, journaling,  
-<div class="typewriter"; style="width:240px;"> <h1> <font face = "canela" size = "3">and birdwatching<h1/></div>
-							      <p></p><p>💝🦜</p>
-
-
-
-                                <div class="layered-paper"; style="width:80px"; font face = "canela";>
-
-                                <li><a class="page-link" href="img/Tooz_CV_G.pdf">CV</a></a></li>
-
-	<p></p>
-
-	<div></div>
-	</div><!-- /.container -->
-			<footer style="text-align:center">
-	    		<ul>
-	        		<i class="fas fa-envelope"></i><li><a href="mailto:tooztooz@gmail.com"> ✉️  email</a></li>
-	        		<i class="fab fa-github"></i><li><a href="https://github.com/toozhsu"> 👾  github.com/toozhsu</a></li>
-
-									</ul>
-
-												     
-
-			</footer>
-										
-
-<a href="https://www.notion.so/reading-list-3c86dd8590954954bf70a4b47f545e2c">🏰
- mind palace (lol)</a>												     
-
-												     
-<br>										
-
-		      <p></p>
-		      </body>
-		  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141279064-1"></script>
-	<!-- link to main stylesheet -->
-	</html>
+		<style>
+    :root {
+      --bg: #F5F0E8;
+      --bg-card: #EDEAE0;
+      --text: #1A1714;
+      --text-muted: #6B6560;
+      --accent: #2A5C45;
+      --accent-light: #D4E8DF;
+      --border: #D8D3C8;
+      --tag-bg: #E8E3D8;
+    }
+    [data-theme="dark"] {
+      --bg: #141210;
+      --bg-card: #1E1C18;
+      --text: #F0EBE0;
+      --text-muted: #8A847A;
+      --accent: #4A9E78;
+      --accent-light: #1A3328;
+      --border: #2E2C28;
+      --tag-bg: #252320;
+    }
+ 
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    html { scroll-behavior: smooth; }
+ 
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Outfit', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      transition: background 0.3s, color 0.3s;
+      overflow-x: hidden;
+    }
+ 
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 1.2rem 2.5rem;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      transition: background 0.3s;
+    }
+    .nav-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-links a {
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+    .theme-btn {
+      background: none; border: 1px solid var(--border);
+      border-radius: 20px; padding: 0.3rem 0.8rem;
+      font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase;
+      color: var(--text-muted); cursor: pointer; font-family: 'Outfit', sans-serif;
+      transition: all 0.2s;
+    }
+    .theme-btn:hover { border-color: var(--accent); color: var(--accent); }
+ 
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      padding-top: 65px;
+    }
+    .hero-left {
+      padding: 8rem 4rem 4rem 4rem;
+      display: flex; flex-direction: column; justify-content: center;
+      border-right: 1px solid var(--border);
+    }
+    .hero-eyebrow {
+      font-size: 0.75rem; font-weight: 600; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--accent);
+      margin-bottom: 1.5rem;
+      opacity: 0; animation: fadeUp 0.6s ease forwards;
+    }
+    .hero-name {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(3rem, 5vw, 4.5rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.4rem;
+      opacity: 0; animation: fadeUp 0.6s 0.1s ease forwards;
+    }
+    .hero-name em { font-style: italic; color: var(--accent); }
+    .hero-title {
+      font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+      font-weight: 400;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      opacity: 0; animation: fadeUp 0.6s 0.2s ease forwards;
+    }
+    .hero-desc {
+      font-size: 1.05rem;
+      max-width: 420px;
+      color: var(--text);
+      opacity: 0; animation: fadeUp 0.6s 0.3s ease forwards;
+      margin-bottom: 3rem;
+    }
+    .hero-ctas {
+      display: flex; gap: 1rem; flex-wrap: wrap;
+      opacity: 0; animation: fadeUp 0.6s 0.4s ease forwards;
+    }
+    .btn-primary {
+      background: var(--accent); color: #fff;
+      padding: 0.75rem 1.8rem; border-radius: 4px;
+      text-decoration: none; font-size: 0.85rem; font-weight: 500;
+      letter-spacing: 0.04em; transition: opacity 0.2s;
+    }
+    .btn-primary:hover { opacity: 0.85; }
+    .btn-ghost {
+      border: 1px solid var(--border); color: var(--text);
+      padding: 0.75rem 1.8rem; border-radius: 4px;
+      text-decoration: none; font-size: 0.85rem; font-weight: 500;
+      letter-spacing: 0.04em; transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+ 
+    .hero-right {
+      padding: 8rem 4rem 4rem 4rem;
+      display: flex; flex-direction: column; justify-content: center; gap: 2rem;
+    }
+    .stat-block { opacity: 0; animation: fadeUp 0.6s ease forwards; }
+    .stat-block:nth-child(1) { animation-delay: 0.3s; }
+    .stat-block:nth-child(2) { animation-delay: 0.4s; }
+    .stat-block:nth-child(3) { animation-delay: 0.5s; }
+    .stat-block:nth-child(4) { animation-delay: 0.6s; }
+    .stat-num {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.8rem; line-height: 1;
+      color: var(--accent); margin-bottom: 0.3rem;
+    }
+    .stat-label {
+      font-size: 0.82rem; font-weight: 500; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--text-muted);
+    }
+    .stat-divider { width: 40px; height: 1px; background: var(--border); margin: 0.6rem 0; }
+ 
+    /* ── SECTIONS ── */
+    section { padding: 6rem 0; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 2.5rem; }
+    .section-label {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem;
+    }
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      line-height: 1.15; margin-bottom: 1rem;
+    }
+    .section-title em { font-style: italic; color: var(--text-muted); }
+    .section-border { width: 50px; height: 2px; background: var(--accent); margin-bottom: 3rem; }
+ 
+    /* ── ABOUT ── */
+    #about { border-top: 1px solid var(--border); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    .about-text p { color: var(--text-muted); margin-bottom: 1.2rem; font-size: 1rem; }
+    .about-text p strong { color: var(--text); font-weight: 500; }
+    .about-interests { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.5rem; }
+    .interest-tag {
+      background: var(--tag-bg); border: 1px solid var(--border);
+      padding: 0.35rem 0.9rem; border-radius: 20px;
+      font-size: 0.8rem; font-weight: 400; color: var(--text-muted);
+    }
+    .skill-group { margin-bottom: 2rem; }
+    .skill-group-label {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.8rem;
+    }
+    .skill-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .skill-pill {
+      background: var(--accent-light); color: var(--accent);
+      padding: 0.3rem 0.8rem; border-radius: 4px;
+      font-size: 0.8rem; font-weight: 500;
+    }
+ 
+    /* ── EXPERIENCE ── */
+    #experience { background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .exp-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .exp-card {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 8px; padding: 2rem;
+      position: relative; overflow: hidden;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .exp-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+    .exp-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: var(--accent);
+      transform: scaleX(0); transform-origin: left; transition: transform 0.3s;
+    }
+    .exp-card:hover::before { transform: scaleX(1); }
+    .exp-period {
+      font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem;
+    }
+    .exp-role {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.3rem; line-height: 1.2; margin-bottom: 0.4rem;
+    }
+    .exp-company { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.2rem; }
+    .exp-desc { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem; }
+    .exp-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .exp-tag {
+      background: var(--tag-bg); border: 1px solid var(--border);
+      padding: 0.2rem 0.6rem; border-radius: 3px;
+      font-size: 0.72rem; font-weight: 500; letter-spacing: 0.04em;
+      text-transform: uppercase; color: var(--text-muted);
+    }
+ 
+    /* ── COMMUNITY ── */
+    #community { border-top: 1px solid var(--border); }
+    .community-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .community-text p { color: var(--text-muted); margin-bottom: 1.2rem; font-size: 1rem; }
+    .community-text p strong { color: var(--text); font-weight: 500; }
+    .community-link-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      margin-top: 1rem; border: 1px solid var(--accent); color: var(--accent);
+      padding: 0.7rem 1.5rem; border-radius: 4px;
+      text-decoration: none; font-size: 0.85rem; font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+    }
+    .community-link-btn:hover { background: var(--accent); color: #fff; }
+    .forum-topics { display: flex; flex-direction: column; gap: 0.8rem; }
+    .forum-topic {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 6px; padding: 1rem 1.2rem;
+      display: flex; align-items: flex-start; gap: 1rem;
+    }
+    .topic-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent); flex-shrink: 0; margin-top: 0.45rem;
+    }
+    .topic-title { font-size: 0.88rem; font-weight: 500; margin-bottom: 0.2rem; }
+    .topic-meta { font-size: 0.75rem; color: var(--text-muted); }
+ 
+    /* ── CONTACT ── */
+    #contact { background: var(--bg-card); border-top: 1px solid var(--border); }
+    .contact-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    .contact-desc { color: var(--text-muted); font-size: 1rem; margin-bottom: 2rem; }
+    .contact-links { display: flex; flex-direction: column; gap: 1rem; }
+    .contact-link {
+      display: flex; align-items: center; gap: 1rem;
+      text-decoration: none; color: var(--text);
+      padding: 1rem 1.2rem; border-radius: 6px;
+      border: 1px solid var(--border);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .contact-link:hover { border-color: var(--accent); transform: translateX(4px); }
+    .contact-link-icon { font-size: 1.2rem; width: 28px; text-align: center; }
+    .contact-link-label {
+      font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.1rem;
+    }
+    .contact-link-value { font-size: 0.9rem; }
+    .contact-right-note {
+      background: var(--accent-light); border: 1px solid var(--accent);
+      border-radius: 8px; padding: 2rem;
+    }
+    .contact-right-note p { font-size: 0.95rem; color: var(--text-muted); line-height: 1.8; }
+    .contact-right-note p strong { color: var(--text); font-weight: 500; }
+ 
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem 2.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .footer-copy { font-size: 0.8rem; color: var(--text-muted); }
+    .footer-made { font-size: 0.8rem; color: var(--text-muted); }
+ 
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .reveal {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+ 
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      .nav-links a { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 7rem 1.5rem 2rem; border-right: none; border-bottom: 1px solid var(--border); }
+      .hero-right { padding: 2rem 1.5rem 3rem; flex-direction: row; flex-wrap: wrap; gap: 1.5rem; }
+      .stat-block { width: calc(50% - 0.75rem); }
+      .stat-divider { display: none; }
+      .about-grid, .community-inner, .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .exp-cards { grid-template-columns: 1fr; }
+      .container { padding: 0 1.5rem; }
+      section { padding: 4rem 0; }
+      footer { flex-direction: column; gap: 0.5rem; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+ 
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">Tooz Hsu</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#community">Community</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" onclick="toggleTheme()" id="themeBtn">Dark</button>
+    </div>
+  </nav>
+ 
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Technical Program Manager</div>
+      <h1 class="hero-name">Yu-chuan<br><em>'Tooz'</em> Hsu</h1>
+      <div class="hero-title">Embedded Systems · IoT & Edge Computing · Robotics</div>
+      <p class="hero-desc">
+        7+ years driving hardware-software programs at ASUS — from ARM-based IoT edge devices
+        and industrial gateways to consumer NUC products and robotics platforms —
+        concept through mass production.
+      </p>
+      <div class="hero-ctas">
+        <a href="https://www.linkedin.com/in/toozhsu" target="_blank" class="btn-primary">View LinkedIn</a>
+        <a href="img/Tooz_CV_G.pdf" target="_blank" class="btn-ghost">Download CV</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="stat-block">
+        <div class="stat-num">7+</div>
+        <div class="stat-label">Years at ASUS</div>
+        <div class="stat-divider"></div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Product Domains — Consumer, IoT, Robotics</div>
+        <div class="stat-divider"></div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">1.9k</div>
+        <div class="stat-label">Developer Community Members Supported</div>
+        <div class="stat-divider"></div>
+      </div>
+      <div class="stat-block">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Languages — English, Mandarin, Japanese</div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <div class="section-label">About</div>
+          <h2 class="section-title">Bridging hardware <em>and</em> software</h2>
+          <div class="section-border"></div>
+          <p>
+            I'm a Technical Program Manager based in <strong>Taipei, Taiwan</strong>,
+            specialising in embedded software programs across ARM and x86 platforms.
+            My work sits at the intersection of hardware engineering,
+            firmware, and software teams — translating technical complexity into
+            executable roadmaps.
+          </p>
+          <p>
+            At ASUS, I've led NPI programs from engineering sample through mass production,
+            coordinating ODM/OEM partners, managing BOMs, and aligning cross-functional
+            teams across BSP, driver, application, and QA workstreams.
+          </p>
+          <p>
+            Outside work I'm a <strong>freelance translator & interpreter</strong> (EN/ZH/JA),
+            an avid birdwatcher, photographer, and lifelong reader.
+          </p>
+          <div class="about-interests">
+            <span class="interest-tag">🦜 Birdwatching</span>
+            <span class="interest-tag">📷 Photography</span>
+            <span class="interest-tag">📚 Reading</span>
+            <span class="interest-tag">✈️ Travel</span>
+            <span class="interest-tag">✍️ Journaling</span>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="skill-group">
+            <div class="skill-group-label">Program Management</div>
+            <div class="skill-pills">
+              <span class="skill-pill">NPI Lifecycle</span>
+              <span class="skill-pill">Roadmap Planning</span>
+              <span class="skill-pill">Risk Management</span>
+              <span class="skill-pill">OKRs</span>
+              <span class="skill-pill">Agile / Scrum</span>
+              <span class="skill-pill">BOM Management</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Technical</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Embedded Linux</span>
+              <span class="skill-pill">BSP / Drivers</span>
+              <span class="skill-pill">Android</span>
+              <span class="skill-pill">ARM / x86</span>
+              <span class="skill-pill">IoT / Edge</span>
+              <span class="skill-pill">SLAM</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Tools & Partnerships</div>
+            <div class="skill-pills">
+              <span class="skill-pill">Jira</span>
+              <span class="skill-pill">Asana</span>
+              <span class="skill-pill">ODM / OEM</span>
+              <span class="skill-pill">Cross-functional Leadership</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-label">Languages</div>
+            <div class="skill-pills">
+              <span class="skill-pill">English — Fluent</span>
+              <span class="skill-pill">Mandarin — Native</span>
+              <span class="skill-pill">Japanese — Working</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <div class="reveal">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">Programs <em>shipped</em></h2>
+        <div class="section-border"></div>
+      </div>
+      <div class="exp-cards">
+        <div class="exp-card reveal">
+          <div class="exp-period">Oct 2024 — Present</div>
+          <div class="exp-role">TPM, NUC Product Line</div>
+          <div class="exp-company">ASUS, Taipei</div>
+          <div class="exp-desc">
+            End-to-end software program management for consumer NUC electronics.
+            Reduced software development cycle time by 15% through process redesign.
+            Owns roadmap, BOM, and release readiness from concept through mass production.
+          </div>
+          <div class="exp-tags">
+            <span class="exp-tag">Consumer Electronics</span>
+            <span class="exp-tag">x86</span>
+            <span class="exp-tag">Mass Production</span>
+          </div>
+        </div>
+        <div class="exp-card reveal">
+          <div class="exp-period">Oct 2019 — Oct 2024</div>
+          <div class="exp-role">TPM, IoT & Edge Computing</div>
+          <div class="exp-company">ASUS, Taipei</div>
+          <div class="exp-desc">
+            Led NPI programs for IoT edge platforms including SBCs, industrial gateways,
+            and industrial PCs. Managed BSP bring-up, driver validation, and application
+            delivery across ODM/OEM partners for Embedded Linux and Android platforms.
+          </div>
+          <div class="exp-tags">
+            <span class="exp-tag">Embedded Linux</span>
+            <span class="exp-tag">Android</span>
+            <span class="exp-tag">SBC</span>
+            <span class="exp-tag">ODM/OEM</span>
+          </div>
+        </div>
+        <div class="exp-card reveal">
+          <div class="exp-period">Oct 2017 — Oct 2019</div>
+          <div class="exp-role">TPM, Robotics</div>
+          <div class="exp-company">ASUS, Taipei</div>
+          <div class="exp-desc">
+            Managed home robotics platform integrating SLAM navigation and Smart Home
+            ecosystems. Led device management program across Android, iOS, Linux, and
+            Windows — from product definition through system integration and launch.
+          </div>
+          <div class="exp-tags">
+            <span class="exp-tag">SLAM</span>
+            <span class="exp-tag">Smart Home</span>
+            <span class="exp-tag">ARM</span>
+            <span class="exp-tag">Multi-platform</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- COMMUNITY -->
+  <section id="community">
+    <div class="container">
+      <div class="community-inner">
+        <div class="community-text reveal">
+          <div class="section-label">Community</div>
+          <h2 class="section-title">Forum Moderator & <em>Technical Contributor</em></h2>
+          <div class="section-border"></div>
+          <p>
+            I serve as a moderator on the official <strong>ASUS Tinker Board developer forum</strong>
+            — a community of 1,900+ developers building on ARM-based single board computers.
+          </p>
+          <p>
+            I provide hands-on technical support spanning Embedded Linux, Android, GPIO,
+            SPI/I2C interfaces, BSP, and OS image flashing — across Tinker Edge T/R,
+            Tinker Board 2/3, and Tinker V platforms.
+          </p>
+          <p>
+            This directly reflects the product lines I manage professionally, and keeps
+            my technical knowledge grounded at the practitioner level.
+          </p>
+          <a href="https://tinker-board.asus.com/forum/index.php?/profile/126-tooz/"
+             target="_blank" class="community-link-btn">
+            View Forum Profile →
+          </a>
+        </div>
+        <div class="forum-topics reveal">
+          <div class="forum-topic">
+            <div class="topic-dot"></div>
+            <div>
+              <div class="topic-title">Tinker Edge T / R — General & Software</div>
+              <div class="topic-meta">Linux, OS Images, BSP, Flashing</div>
+            </div>
+          </div>
+          <div class="forum-topic">
+            <div class="topic-dot"></div>
+            <div>
+              <div class="topic-title">Tinker Board 2 Series — Android</div>
+              <div class="topic-meta">Android 11, USB-C, Kernel, Drivers</div>
+            </div>
+          </div>
+          <div class="forum-topic">
+            <div class="topic-dot"></div>
+            <div>
+              <div class="topic-title">Tinker Board 3 Series — Software</div>
+              <div class="topic-meta">Debian, GPIO, Docker, ADB</div>
+            </div>
+          </div>
+          <div class="forum-topic">
+            <div class="topic-dot"></div>
+            <div>
+              <div class="topic-title">Tinker V — Hardware & Peripherals</div>
+              <div class="topic-meta">SPI, I2C, Interface Debugging</div>
+            </div>
+          </div>
+          <div class="forum-topic">
+            <div class="topic-dot"></div>
+            <div>
+              <div class="topic-title">Community Moderation</div>
+              <div class="topic-meta">1,900+ members · multiple product lines</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="reveal">
+          <div class="section-label">Contact</div>
+          <h2 class="section-title">Let's <em>connect</em></h2>
+          <div class="section-border"></div>
+          <p class="contact-desc">
+            Open to TPM opportunities at hardware-software companies, and always happy
+            to connect with engineers and PMs working in embedded systems and IoT.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:tooztooz@gmail.com" class="contact-link">
+              <div class="contact-link-icon">✉️</div>
+              <div>
+                <div class="contact-link-label">Email</div>
+                <div class="contact-link-value">tooztooz@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/toozhsu" target="_blank" class="contact-link">
+              <div class="contact-link-icon">💼</div>
+              <div>
+                <div class="contact-link-label">LinkedIn</div>
+                <div class="contact-link-value">linkedin.com/in/toozhsu</div>
+              </div>
+            </a>
+            <a href="https://github.com/toozhsu" target="_blank" class="contact-link">
+              <div class="contact-link-icon">👾</div>
+              <div>
+                <div class="contact-link-label">GitHub</div>
+                <div class="contact-link-value">github.com/toozhsu</div>
+              </div>
+            </a>
+            <a href="https://tinker-board.asus.com/forum/index.php?/profile/126-tooz/" target="_blank" class="contact-link">
+              <div class="contact-link-icon">🔧</div>
+              <div>
+                <div class="contact-link-label">ASUS Tinker Forum</div>
+                <div class="contact-link-value">Forum Moderator Profile</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right-note reveal">
+          <p>
+            <strong>Currently based in Taipei, Taiwan.</strong><br><br>
+            Targeting Technical Program Manager roles at companies building hardware-software
+            products — particularly in edge computing, embedded systems, and developer platforms.<br><br>
+            Background spans consumer electronics (NUC), IoT/edge, robotics, and the full
+            NPI lifecycle from concept through mass production.<br><br>
+            <strong>Open to remote, hybrid, and relocation opportunities.</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-copy">© 2025 Yu-chuan 'Tooz' Hsu · Taipei, Taiwan</div>
+    <div class="footer-made">TPM · Embedded Systems · IoT · Edge Computing</div>
+  </footer>
+ 
+  <script>
+    // Theme toggle
+    const saved = localStorage.getItem('theme') || 'light';
+    if (saved === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      document.getElementById('themeBtn').textContent = 'Light';
+    }
+ 
+    function toggleTheme() {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        document.getElementById('themeBtn').textContent = 'Dark';
+      } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        document.getElementById('themeBtn').textContent = 'Light';
+      }
+    }
+ 
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e, i) => {
+        if (e.isIntersecting) {
+          setTimeout(() => e.target.classList.add('visible'), i * 80);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
